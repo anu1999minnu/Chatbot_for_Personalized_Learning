@@ -1,0 +1,234 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: answers path
+  steps:
+  - intent: answers
+  - slot_was_set:
+    - topic: "chemistry"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "math"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "history"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "geography"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "english"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "physics"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "biology"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "computer science"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "coding"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "programming"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "science"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "technology"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "economics"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "business"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "finance"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "accounting"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "marketing"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "management"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "arts"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "machine learning"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "deep learning"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "artificial intelligence"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "neural networks"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "reinforcement learning"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "supervised learning"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "unsupervised learning"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "natural language processing"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "computer vision"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data science"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "big data"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data analytics"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data engineering"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data warehousing"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data mining"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "data visualization"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "cyber security"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "information security"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "network security"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "cloud computing"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "distributed systems"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "operating systems"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "computer networks"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "web development"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "mobile development"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "game development"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "software development"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "software engineering"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "agile"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "scrum"
+  - action: action_provide_information
+  - intent: answers
+  - slot_was_set:
+    - topic: "kanban"
+  - action: action_provide_information
+

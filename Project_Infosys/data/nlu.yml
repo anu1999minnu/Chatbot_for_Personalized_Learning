@@ -1,0 +1,144 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: answers
+  examples: |
+    - I have a question in [chemistry](topic)
+    - I have a question in [math](topic)
+    - I have a question in [history](topic)
+    - I have a question in [geography](topic)
+    - I have a question in [english](topic)
+    - I have a question in [physics](topic)
+    - I have a question in [biology](topic)
+    - I have a question in [computer science](topic)
+    - I have a question in [coding](topic)
+    - I have a question in [programming](topic)
+    - I have a question in [science](topic)
+    - I have a question in [technology](topic)
+    - I have a question in [economics](topic)
+    - I have a question in [business](topic)
+    - I have a question in [finance](topic)
+    - I have a question in [accounting](topic)
+    - I have a question in [marketing](topic)
+    - I have a question in [management](topic)
+    - I have a question in [arts](topic)
+    - I have a question in [machine learning](topic)
+    - I have a question in [deep learning](topic)
+    - I have a question in [artificial intelligence](topic)
+    - I have a question in [neural networks](topic)
+    - I have a question in [reinforcement learning](topic)
+    - I have a question in [supervised learning](topic)
+    - I have a question in [unsupervised learning](topic)
+    - I have a question in [natural language processing](topic)
+    - I have a question in [computer vision](topic)
+    - I have a question in [data science](topic)
+    - I have a question in [big data](topic)
+    - I have a question in [data analytics](topic)
+    - I have a question in [data engineering](topic)
+    - I have a question in [data warehousing](topic)
+    - I have a question in [data mining](topic)
+    - I have a question in [data visualization](topic)
+    - I have a question in [cyber security](topic)
+    - I have a question in [information security](topic)
+    - I have a question in [network security](topic)
+    - I have a question in [cloud computing](topic)
+    - I have a question in [distributed systems](topic)
+    - I have a question in [operating systems](topic)
+    - I have a question in [computer networks](topic)
+    - I have a question in [web development](topic)
+    - I have a question in [mobile development](topic)
+    - I have a question in [game development](topic)
+    - I have a question in [software development](topic)
+    - I have a question in [software engineering](topic)
+    - I have a question in [agile](topic)
+    - I have a question in [scrum](topic)
+    - I have a question in [kanban](topic)
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

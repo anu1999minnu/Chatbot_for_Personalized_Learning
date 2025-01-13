@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+    <script>
+        function sendMessage() {
+            const userMessage = document.getElementById('userMessage').value;
+            fetch('/webhook', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userMessage, sender: 'user' })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const botResponse = data[0].text;
+                document.getElementById('chatHistory').innerHTML += `<p>User: ${userMessage}</p><p>Bot: ${botResponse}</p>`;
+                document.getElementById('userMessage').value = '';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="chatContainer">
+        <div id="chatHistory"></div>
+        <input type="text" id="userMessage" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+</html>
