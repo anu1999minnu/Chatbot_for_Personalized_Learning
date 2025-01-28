@@ -9,6 +9,7 @@ intents:
   - affirm
   - deny
   - who_created_you
+  - solve_math_problem
 
 entities:
   - topic
@@ -45,8 +46,12 @@ responses:
   utter_more_info:
     - text: "If there is anything more u want to learn, please tell" 
   utter_creator:
-    - text: "I was created by Shivam"   
+    - text: "I was created by Ahana"   
+  utter_math_solution:
+    - text: "The equation is solved to:"
 
 actions:
   - action_generate_content
   - action_fetch_youtube_videos
+  - action_fetch_data
+  - action_solve_math_problem
